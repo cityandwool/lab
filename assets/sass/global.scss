@@ -43,6 +43,8 @@ body {
 			a {
 				display: block;
 				padding: $gutter;
+				color: $white;
+				text-decoration: none;
 			}
 		}
 	}
@@ -51,7 +53,7 @@ body {
 		a {
 			color: $white;
 			text-decoration: none;
-			border-bottom: 4px dashed $white;
+			border-bottom: 2px dashed $white;
 			&:hover {
 				border-bottom-style: dashed;
 			} 
