@@ -95,4 +95,4 @@ body {
       border-bottom: 2px dashed white; }
       /* line 57, ../sass/global.scss */
       body footer a:hover {
-        border-bottom-style: dashed; }
+        border-bottom-style: solid; }
