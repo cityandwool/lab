@@ -72,7 +72,7 @@ body header h1 {
 body {
   font-family: 'Montserrat';
   font-size: 2em;
-  line-height: 2.5em;
+  line-height: 1.2em;
   background: #2c3e50;
   color: white;
   text-align: center; }
@@ -82,8 +82,15 @@ body {
     /* line 43, ../sass/global.scss */
     body main section a {
       display: block;
-      padding: 40px; }
+      padding: 20px; }
   /* line 49, ../sass/global.scss */
+  body footer {
+    padding: 20px; }
+  /* line 52, ../sass/global.scss */
   body a {
     color: white;
-    text-decoration: none; }
+    text-decoration: none;
+    border-bottom: 4px dashed white; }
+    /* line 56, ../sass/global.scss */
+    body a:hover {
+      border-bottom-style: dashed; }

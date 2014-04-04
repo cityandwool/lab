@@ -15,7 +15,7 @@ $secondary-dark: 		#2c3e50;
 $white: 				#FFF;
 $black: 				#000;
 
-$gutter: 				40px;
+$gutter: 				20px;
 
 %visuallyhidden { 
   position: absolute; 
@@ -28,7 +28,7 @@ $gutter: 				40px;
 body {
 	font-family: 'Montserrat';
 	font-size: 2em;
-	line-height: 2.5em;
+	line-height: 1.2em;
 	background: $secondary-dark;
 	color: $white;
 	text-align: center;
@@ -46,8 +46,15 @@ body {
 			}
 		}
 	}
+	footer {
+		padding: $gutter;
+	}
 	a {
 		color: $white;
 		text-decoration: none;
+		border-bottom: 4px dashed $white;
+		&:hover {
+			border-bottom-style: dashed;
+		} 
 	}
 }
