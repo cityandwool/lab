@@ -86,11 +86,11 @@ body {
   /* line 49, ../sass/global.scss */
   body footer {
     padding: 20px; }
-  /* line 52, ../sass/global.scss */
-  body a {
-    color: white;
-    text-decoration: none;
-    border-bottom: 4px dashed white; }
-    /* line 56, ../sass/global.scss */
-    body a:hover {
-      border-bottom-style: dashed; }
+    /* line 51, ../sass/global.scss */
+    body footer a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 4px dashed white; }
+      /* line 55, ../sass/global.scss */
+      body footer a:hover {
+        border-bottom-style: dashed; }

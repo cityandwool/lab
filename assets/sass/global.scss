@@ -48,13 +48,14 @@ body {
 	}
 	footer {
 		padding: $gutter;
+		a {
+			color: $white;
+			text-decoration: none;
+			border-bottom: 4px dashed $white;
+			&:hover {
+				border-bottom-style: dashed;
+			} 
+		}
 	}
-	a {
-		color: $white;
-		text-decoration: none;
-		border-bottom: 4px dashed $white;
-		&:hover {
-			border-bottom-style: dashed;
-		} 
-	}
+
 }
