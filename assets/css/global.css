@@ -57,15 +57,33 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
-/* line 18, ../sass/global.scss */
+/* line 20, ../sass/global.scss */
+body header h1 {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
+
+/* line 28, ../sass/global.scss */
 body {
+  font-family: 'Montserrat';
+  font-size: 2em;
+  line-height: 2.5em;
   background: #2c3e50;
-  color: white; }
-  /* line 22, ../sass/global.scss */
+  color: white;
+  text-align: center; }
+  /* line 41, ../sass/global.scss */
   body main section {
     background: #34495e; }
-    /* line 24, ../sass/global.scss */
+    /* line 43, ../sass/global.scss */
     body main section a {
-      color: white;
-      text-decoration: none;
-      display: block; }
+      display: block;
+      padding: 40px; }
+  /* line 49, ../sass/global.scss */
+  body a {
+    color: white;
+    text-decoration: none; }
