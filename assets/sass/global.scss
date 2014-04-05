@@ -18,16 +18,16 @@ $black: 				#000;
 $gutter: 				20px;
 
 %visuallyhidden { 
-  position: absolute; 
-  overflow: hidden; 
-  clip: rect(0 0 0 0); 
-  height: 1px; width: 1px; 
-  margin: -1px; padding: 0; border: 0; 
+	position: absolute; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height: 1px; width: 1px; 
+	margin: -1px; padding: 0; border: 0; 
 }
 
 body {
 	font-family: 'Montserrat';
-	font-size: 2em;
+	font-size: 1.2em;
 	line-height: 1.2em;
 	background: $secondary-dark;
 	color: $white;
@@ -42,7 +42,32 @@ body {
 			background: $secondary;
 			a {
 				display: block;
-				padding: $gutter;
+				text-decoration: none;
+				color: $white;
+				padding: $gutter*2 $gutter;
+				@include transition(all 1s ease-in-out);
+				&:hover {
+					padding: $gutter*4 $gutter;
+					.excerpt {
+						max-height: 250px;
+					}
+				}
+				h2 {
+					font-size: 2em;
+					line-height: 1.2em;
+				}
+				.excerpt {
+					@include transition(all .8s ease-in-out);
+					display: inline-block;
+					max-height: 0px;
+					overflow: hidden;
+					p {
+						margin: $gutter auto;
+						border-top: 1px solid $secondary-dark;
+						border-bottom: 1px solid $secondary-dark;
+						padding: $gutter;
+					}
+				}
 			}
 		}
 	}
@@ -51,11 +76,26 @@ body {
 		a {
 			color: $white;
 			text-decoration: none;
-			border-bottom: 4px dashed $white;
+			border-bottom: 1px dashed $white;
 			&:hover {
-				border-bottom-style: dashed;
+				border-bottom-style: solid;
 			} 
 		}
 	}
+}
 
+%btn {
+	display: inline-block;
+	border: 1px solid $white;
+	padding: $gutter/2 $gutter*.75;
+	@include border-radius($gutter/4 $gutter/4);
+	@include transition(background .3s ease-in-out);
+	&:hover {
+		background: $white;
+		color: $secondary;
+	}
+}
+
+.btn {
+	@extend %btn;
 }
