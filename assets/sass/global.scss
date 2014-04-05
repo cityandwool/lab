@@ -42,6 +42,7 @@ body {
 			background: $secondary;
 			a {
 				display: block;
+<<<<<<< HEAD
 				text-decoration: none;
 				color: $white;
 				padding: $gutter*2 $gutter;
@@ -68,6 +69,11 @@ body {
 						padding: $gutter;
 					}
 				}
+=======
+				padding: $gutter;
+				color: $white;
+				text-decoration: none;
+>>>>>>> 4c64cca50a2697202218acfdabb55fdf1c0956aa
 			}
 		}
 	}
@@ -76,7 +82,11 @@ body {
 		a {
 			color: $white;
 			text-decoration: none;
+<<<<<<< HEAD
 			border-bottom: 1px dashed $white;
+=======
+			border-bottom: 2px dashed $white;
+>>>>>>> 4c64cca50a2697202218acfdabb55fdf1c0956aa
 			&:hover {
 				border-bottom-style: solid;
 			} 
