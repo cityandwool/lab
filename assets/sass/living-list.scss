@@ -12,8 +12,13 @@ $primary-dark: 			#16a085;
 $secondary: 			#34495e;
 $secondary-dark: 		#2c3e50;
 
+$gray-dark: 			#333;
+
 $white: 				#FFF;
 $black: 				#000;
+
+$ribbon: 				#e74c3c;
+$ribbon-dark:			#c0392b;
 
 $success: 				#0cca30;
 $yellow: 				#f1c40f;
@@ -127,9 +132,99 @@ body.living-list {
 				@include box-shadow(inset 0px 0px 30px -10px $black);
 			}
 		}
-		&.post-1 a {
-			//background: red;
+		&.post-1 {
+			$rw: 4px;
+			$rc: $ribbon;
+			$rcd: $ribbon-dark;
+			&:before {
+				position: absolute;
+				content: '';
+				top: $gutter;
+				left: 0;
+				right: 0;
+				height: $rw;
+				background: $rc;
+				@include background-image(linear-gradient($rc, $rcd));
+				z-index: 1;
+			}
+			&:after {
+				position: absolute;
+				content: '';
+				top: 0;
+				bottom: 0;
+				right: $gutter+8;
+				width: $rw;
+				background: $rc;
+				@include background-image(linear-gradient($rc, $rcd));
+				z-index: 1;
+			}
+			a {
+				color: $gray-dark;
+				@include text-shadow(rgba(102, 102, 102, 0.5) 0 -1px 0, rgba(255, 255, 255, 0.6) 0 2px 1px);
+				background-image: linear-gradient(180deg, #C7C7C7 0%, #E6E6E6 40%, #C7C7C7 75%, #B3B3B3 100%);
+			}
 		}
+		/*&.post-2 a {
+			color: $gray-dark;
+			@include text-shadow(rgba(102, 102, 102, 0.5) 0 -1px 0, rgba(255, 255, 255, 0.6) 0 2px 1px);
+			background-image: linear-gradient(180deg, #C7C7C7 0%, #E6E6E6 40%, #C7C7C7 75%, #B3B3B3 100%);
+		}*/
+		&.visited {
+			&:before, &:after{
+				display: none;
+			}
+			a {
+				background: $black;
+				color: $gray-dark;
+				@include text-shadow(none);
+				text-decoration: line-through;
+				&:before, &:after{
+					display: none;
+				}
+			}
+			.star {
+				display: none;
+			}
+		}
+	}
+}
+
+.star {
+	$s: 30px;
+	$rc: $ribbon;
+	$rcd: $ribbon-dark;
+	height: $s;
+	width: $s;
+	position: absolute;
+	top: 7px;
+	right: 15px;
+	z-index: 2;
+	background: $rc;
+	@include background-image(linear-gradient(210deg, $rc, $rcd));
+	@include rotate(-30deg);
+	&:before {
+		height: $s;
+		width: $s;
+		content:"";
+		position: absolute;
+		display: block;
+		background: $rc;
+		@include background-image(linear-gradient(-240deg, $rc, $rcd));
+		@include rotate(60deg);
+	}
+	&:after {
+		height: $s;
+		width: $s;
+		line-height: $s;
+		text-align: center;
+		@extend %fa;
+		color: $white;
+		content:"\f087";
+		position: absolute;
+		display: block;
+		background: $rc;
+		@include background-image(linear-gradient(-210deg, $rc, $rcd));
+		@include rotate(30deg);
 	}
 }
 
@@ -141,7 +236,7 @@ main {
 .toggle {
 	position: fixed;
 	right: -140px;
-	top: 73px;
+	top: 30%;
 	z-index: 5;
 	@include transition(right 0.5s ease-in-out); 
 	ul {

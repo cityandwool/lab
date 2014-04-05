@@ -26,85 +26,110 @@ a img { border: none; }
 /* line 116, ../../../../../../../RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
-/* line 23, ../sass/living-list.scss */
+/* line 28, ../sass/living-list.scss */
 header h1 { position: absolute; overflow: hidden; clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0; }
 
-/* line 31, ../sass/living-list.scss */
-body.clear-to-do section:after { font-family: 'FontAwesome'; }
+/* line 36, ../sass/living-list.scss */
+body.clear-to-do section:after, .star:after { font-family: 'FontAwesome'; }
 
-/* line 35, ../sass/living-list.scss */
+/* line 40, ../sass/living-list.scss */
 body { font-family: 'Montserrat'; font-size: 1.2em; line-height: 1.2em; background: black; color: white; }
 
-/* line 53, ../sass/living-list.scss */
-body.clear-to-do .post-1 { background: #f40e00; }
-/* line 53, ../sass/living-list.scss */
-body.clear-to-do .post-2 { background: #f41c00; }
-/* line 53, ../sass/living-list.scss */
-body.clear-to-do .post-3 { background: #f42b00; }
-/* line 53, ../sass/living-list.scss */
-body.clear-to-do .post-4 { background: #f43900; }
-/* line 53, ../sass/living-list.scss */
-body.clear-to-do .post-5 { background: #f44700; }
-/* line 53, ../sass/living-list.scss */
-body.clear-to-do .post-6 { background: #f45500; }
-/* line 53, ../sass/living-list.scss */
-body.clear-to-do .post-7 { background: #f46400; }
-/* line 53, ../sass/living-list.scss */
-body.clear-to-do .post-8 { background: #f47200; }
-/* line 53, ../sass/living-list.scss */
-body.clear-to-do .post-9 { background: #f48000; }
-/* line 53, ../sass/living-list.scss */
-body.clear-to-do .post-10 { background: #f48e00; }
 /* line 58, ../sass/living-list.scss */
+body.clear-to-do .post-1 { background: #f40e00; }
+/* line 58, ../sass/living-list.scss */
+body.clear-to-do .post-2 { background: #f41c00; }
+/* line 58, ../sass/living-list.scss */
+body.clear-to-do .post-3 { background: #f42b00; }
+/* line 58, ../sass/living-list.scss */
+body.clear-to-do .post-4 { background: #f43900; }
+/* line 58, ../sass/living-list.scss */
+body.clear-to-do .post-5 { background: #f44700; }
+/* line 58, ../sass/living-list.scss */
+body.clear-to-do .post-6 { background: #f45500; }
+/* line 58, ../sass/living-list.scss */
+body.clear-to-do .post-7 { background: #f46400; }
+/* line 58, ../sass/living-list.scss */
+body.clear-to-do .post-8 { background: #f47200; }
+/* line 58, ../sass/living-list.scss */
+body.clear-to-do .post-9 { background: #f48000; }
+/* line 58, ../sass/living-list.scss */
+body.clear-to-do .post-10 { background: #f48e00; }
+/* line 63, ../sass/living-list.scss */
 body.clear-to-do section { overflow: hidden; position: relative; }
-/* line 61, ../sass/living-list.scss */
+/* line 66, ../sass/living-list.scss */
 body.clear-to-do section a { display: block; text-decoration: none; color: white; padding: 40px; -webkit-box-shadow: inset 0px 0px 20px -10px black; -moz-box-shadow: inset 0px 0px 20px -10px black; box-shadow: inset 0px 0px 20px -10px black; -webkit-transition: all 1s ease-in-out; -moz-transition: all 1s ease-in-out; -o-transition: all 1s ease-in-out; transition: all 1s ease-in-out; }
-/* line 68, ../sass/living-list.scss */
+/* line 73, ../sass/living-list.scss */
 body.clear-to-do section a:hover { -webkit-box-shadow: inset 0px 0px 30px -10px black; -moz-box-shadow: inset 0px 0px 30px -10px black; box-shadow: inset 0px 0px 30px -10px black; }
-/* line 71, ../sass/living-list.scss */
+/* line 76, ../sass/living-list.scss */
 body.clear-to-do section a:active { -webkit-box-shadow: inset 0px 0px 40px -10px black; -moz-box-shadow: inset 0px 0px 40px -10px black; box-shadow: inset 0px 0px 40px -10px black; }
-/* line 75, ../sass/living-list.scss */
+/* line 80, ../sass/living-list.scss */
 body.clear-to-do section:after { position: absolute; content: '\f00c'; top: 50%; right: -40px; margin-top: -11px; font-size: 25px; }
-/* line 84, ../sass/living-list.scss */
+/* line 89, ../sass/living-list.scss */
 body.clear-to-do section.visited { position: relative; background-color: #0cca30; text-decoration: line-through; }
-/* line 88, ../sass/living-list.scss */
+/* line 93, ../sass/living-list.scss */
 body.clear-to-do section.visited:after { right: 40px; }
-/* line 91, ../sass/living-list.scss */
+/* line 96, ../sass/living-list.scss */
 body.clear-to-do section.visited a { padding: 40px 60px 40px 40px; }
 
-/* line 98, ../sass/living-list.scss */
+/* line 103, ../sass/living-list.scss */
 footer { padding: 20px; text-align: center; }
-/* line 101, ../sass/living-list.scss */
+/* line 106, ../sass/living-list.scss */
 footer a { color: white; text-decoration: none; border-bottom: 1px dashed white; }
-/* line 105, ../sass/living-list.scss */
+/* line 110, ../sass/living-list.scss */
 footer a:hover { border-bottom-style: solid; }
 
-/* line 110, ../sass/living-list.scss */
+/* line 115, ../sass/living-list.scss */
 .tweet { text-align: center; padding: 20px; }
 
-/* line 116, ../sass/living-list.scss */
-body.living-list section { position: relative; background: #34495e; }
-/* line 119, ../sass/living-list.scss */
+/* line 121, ../sass/living-list.scss */
+body.living-list section { position: relative; background: #34495e; /*&.post-2 a {
+	color: $gray-dark;
+	@include text-shadow(rgba(102, 102, 102, 0.5) 0 -1px 0, rgba(255, 255, 255, 0.6) 0 2px 1px);
+	background-image: linear-gradient(180deg, #C7C7C7 0%, #E6E6E6 40%, #C7C7C7 75%, #B3B3B3 100%);
+}*/ }
+/* line 124, ../sass/living-list.scss */
 body.living-list section a { display: block; text-decoration: none; color: white; padding: 40px; -webkit-box-shadow: inset 0px 0px 20px -10px black; -moz-box-shadow: inset 0px 0px 20px -10px black; box-shadow: inset 0px 0px 20px -10px black; -webkit-transition: all 1s ease-in-out; -moz-transition: all 1s ease-in-out; -o-transition: all 1s ease-in-out; transition: all 1s ease-in-out; }
-/* line 126, ../sass/living-list.scss */
+/* line 131, ../sass/living-list.scss */
 body.living-list section a:hover { -webkit-box-shadow: inset 0px 0px 30px -10px black; -moz-box-shadow: inset 0px 0px 30px -10px black; box-shadow: inset 0px 0px 30px -10px black; }
+/* line 139, ../sass/living-list.scss */
+body.living-list section.post-1:before { position: absolute; content: ''; top: 20px; left: 0; right: 0; height: 4px; background: #e74c3c; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e74c3c), color-stop(100%, #c0392b)); background-image: -webkit-linear-gradient(#e74c3c, #c0392b); background-image: -moz-linear-gradient(#e74c3c, #c0392b); background-image: -o-linear-gradient(#e74c3c, #c0392b); background-image: linear-gradient(#e74c3c, #c0392b); z-index: 1; }
+/* line 150, ../sass/living-list.scss */
+body.living-list section.post-1:after { position: absolute; content: ''; top: 0; bottom: 0; right: 28px; width: 4px; background: #e74c3c; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e74c3c), color-stop(100%, #c0392b)); background-image: -webkit-linear-gradient(#e74c3c, #c0392b); background-image: -moz-linear-gradient(#e74c3c, #c0392b); background-image: -o-linear-gradient(#e74c3c, #c0392b); background-image: linear-gradient(#e74c3c, #c0392b); z-index: 1; }
+/* line 161, ../sass/living-list.scss */
+body.living-list section.post-1 a { color: #333333; text-shadow: rgba(102, 102, 102, 0.5) 0 -1px 0, rgba(255, 255, 255, 0.6) 0 2px 1px; background-image: linear-gradient(180deg, #c7c7c7 0%, #e6e6e6 40%, #c7c7c7 75%, #b3b3b3 100%); }
+/* line 173, ../sass/living-list.scss */
+body.living-list section.visited:before, body.living-list section.visited:after { display: none; }
+/* line 176, ../sass/living-list.scss */
+body.living-list section.visited a { background: black; color: #333333; text-shadow: none; text-decoration: line-through; }
+/* line 181, ../sass/living-list.scss */
+body.living-list section.visited a:before, body.living-list section.visited a:after { display: none; }
+/* line 185, ../sass/living-list.scss */
+body.living-list section.visited .star { display: none; }
 
-/* line 136, ../sass/living-list.scss */
+/* line 192, ../sass/living-list.scss */
+.star { height: 30px; width: 30px; position: absolute; top: 7px; right: 15px; z-index: 2; background: #e74c3c; background-image: -webkit-linear-gradient(210deg, #e74c3c, #c0392b); background-image: -moz-linear-gradient(210deg, #e74c3c, #c0392b); background-image: -o-linear-gradient(210deg, #e74c3c, #c0392b); background-image: linear-gradient(210deg, #e74c3c, #c0392b); -webkit-transform: rotate(-30deg); -moz-transform: rotate(-30deg); -ms-transform: rotate(-30deg); -o-transform: rotate(-30deg); transform: rotate(-30deg); }
+/* line 205, ../sass/living-list.scss */
+.star:before { height: 30px; width: 30px; content: ""; position: absolute; display: block; background: #e74c3c; background-image: -webkit-linear-gradient(-240deg, #e74c3c, #c0392b); background-image: -moz-linear-gradient(-240deg, #e74c3c, #c0392b); background-image: -o-linear-gradient(-240deg, #e74c3c, #c0392b); background-image: linear-gradient(-240deg, #e74c3c, #c0392b); -webkit-transform: rotate(60deg); -moz-transform: rotate(60deg); -ms-transform: rotate(60deg); -o-transform: rotate(60deg); transform: rotate(60deg); }
+/* line 215, ../sass/living-list.scss */
+.star:after { height: 30px; width: 30px; line-height: 30px; text-align: center; color: white; content: "\f087"; position: absolute; display: block; background: #e74c3c; background-image: -webkit-linear-gradient(-210deg, #e74c3c, #c0392b); background-image: -moz-linear-gradient(-210deg, #e74c3c, #c0392b); background-image: -o-linear-gradient(-210deg, #e74c3c, #c0392b); background-image: linear-gradient(-210deg, #e74c3c, #c0392b); -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg); -ms-transform: rotate(30deg); -o-transform: rotate(30deg); transform: rotate(30deg); }
+
+/* line 231, ../sass/living-list.scss */
 main { position: relative; overflow: hidden; }
 
-/* line 141, ../sass/living-list.scss */
-.toggle { position: fixed; right: -140px; top: 73px; z-index: 5; -webkit-transition: right 0.5s ease-in-out; -moz-transition: right 0.5s ease-in-out; -o-transition: right 0.5s ease-in-out; transition: right 0.5s ease-in-out; }
-/* line 147, ../sass/living-list.scss */
+/* line 236, ../sass/living-list.scss */
+.toggle { position: fixed; right: -140px; top: 30%; z-index: 5; -webkit-transition: right 0.5s ease-in-out; -moz-transition: right 0.5s ease-in-out; -o-transition: right 0.5s ease-in-out; transition: right 0.5s ease-in-out; }
+/* line 242, ../sass/living-list.scss */
 .toggle ul { margin: 0; }
-/* line 150, ../sass/living-list.scss */
+/* line 245, ../sass/living-list.scss */
 .toggle ul li a { display: block; padding: 15px; color: white; text-decoration: none; background: black; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; -webkit-box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.2); -moz-box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.2); box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.2); }
-/* line 158, ../sass/living-list.scss */
+/* line 253, ../sass/living-list.scss */
 .toggle ul li a i { margin-right: 15px; margin-left: 7px; }
-/* line 162, ../sass/living-list.scss */
+/* line 257, ../sass/living-list.scss */
 .toggle ul li a:hover { background: #1a1a1a; }
-/* line 166, ../sass/living-list.scss */
+/* line 261, ../sass/living-list.scss */
 .toggle ul li.active a { color: #f1c40f; }
-/* line 168, ../sass/living-list.scss */
+/* line 263, ../sass/living-list.scss */
 .toggle ul li.active a i { text-shadow: 0px 0px 20px #f4d03f; }
-/* line 174, ../sass/living-list.scss */
+/* line 269, ../sass/living-list.scss */
 .toggle:hover { right: 0px; }
